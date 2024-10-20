@@ -20,7 +20,7 @@ const Work = () => {
               exit="hidden"
               className="h2 xl:mt-12"
             >
-              My work <span className="text-accent">.</span>
+              Our work <span className="text-accent">.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -29,8 +29,30 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              tempora eligendi, quisquam tempore sint reiciendis.
+              <div className="mb-5">
+                <span className="text-xl text-white mb-5">
+                  {" "}
+                  On-Time Delivery
+                </span>
+                <br /> We take pride in completing projects on time, ensuring
+                your business stays on track without any delays.
+              </div>
+              <div className="mb-5">
+                <span className="text-xl text-white mb-8">
+                  Tailored Solutions
+                </span>
+                <br /> Our solutions are customized to fit the unique
+                requirements of your business, equipping you with the tools for
+                success.
+              </div>
+              {/* <div>
+                <span className="text-xl text-white mb-8">
+                  Cutting-Edge Technology
+                </span>
+                <br />
+                We utilize the latest technologies to develop scalable, secure,
+                and high-performance applications.
+              </div> */}
             </motion.p>
           </div>
 
