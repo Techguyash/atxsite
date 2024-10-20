@@ -8,6 +8,8 @@ import {
   FaJs,
   FaReact,
   FaWordpress,
+  FaApple,
+  FaJava,
 } from "react-icons/fa";
 import {
   SiAdobephotoshop,
@@ -16,12 +18,42 @@ import {
   SiNextdotjs,
 } from "react-icons/si";
 
+import { TbBrandReactNative } from "react-icons/tb";
+import { IoLogoAndroid } from "react-icons/io";
+
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 import { fadeIn } from "../../variants";
 
 //  data
 export const aboutData = [
+  {
+    title: "Our Services",
+    info: [
+      {
+        icons: [IoLogoAndroid, FaApple],
+        title: "Mobile App Development",
+        // stage: "2012 - 2023",
+      },
+      {
+        icons: [FaJava],
+        title: "Web App Development",
+        // stage: "2010 - 2012",
+      },
+      {
+        title: "Consulting & Strategy",
+        // stage: "2008 - 2010",
+      },
+      {
+        title: "Staff Augmentation",
+        // stage: "2008 - 2010",
+      },
+      {
+        title: "Project Outsourcing",
+        // stage: "2008 - 2010",
+      },
+    ],
+  },
   {
     title: "skills",
     info: [
@@ -41,55 +73,25 @@ export const aboutData = [
         title: "UI/UX Design",
         icons: [FaFigma, SiAdobexd, SiAdobephotoshop],
       },
-    ],
-  },
-  {
-    title: "awards",
-    info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "Mobile Development",
+        icons: [TbBrandReactNative, IoLogoAndroid, FaApple],
       },
     ],
   },
-  {
-    title: "experience",
-    info: [
-      {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
-      },
-      {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
-    ],
-  },
-  {
-    title: "credentials",
-    info: [
-      {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
-      },
-    ],
-  },
+  // {
+  //   title: "awards",
+  //   info: [
+  //     {
+  //       title: "Webby Awards - Honoree",
+  //       stage: "2011 - 2012",
+  //     },
+  //     {
+  //       title: "Adobe Design Achievement Awards - Finalist",
+  //       stage: "2009 - 2010",
+  //     },
+  //   ],
+  // },
 ];
 
 const About = () => {
@@ -120,8 +122,8 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent designs.
+            Innovators in digital solutions{" "}
+            <span className="text-accent">experts.</span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -129,9 +131,11 @@ const About = () => {
             animate="show"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I begin freelancing as a developer. Since then, I've
-            done remote work for agencies, consulted for startups, and
-            collabrated on digital products for business and consumer use.
+            Our company began its journey in digital transformation development
+            over 10 years ago. Since then, we have successfully partnered with
+            agencies on remote projects, offered consulting services to
+            startups, and collaborated on innovative digital products designed
+            for both businesses and consumers.
           </motion.p>
 
           {/* counters */}
@@ -155,7 +159,7 @@ const About = () => {
               {/* clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} />
+                  <CountUp start={0} end={150} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied clients.
@@ -165,7 +169,7 @@ const About = () => {
               {/* projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} />
+                  <CountUp start={0} end={200} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished projects.
@@ -175,10 +179,10 @@ const About = () => {
               {/* awards */}
               <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} />
+                  <CountUp start={0} end={5} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Winning awards.
+                  Ongoing Projects.
                 </div>
               </div>
             </div>
@@ -203,6 +207,11 @@ const About = () => {
                 } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                 onClick={() => setIndex(itemI)}
               >
+                {item.icons?.map((Icon, iconI) => (
+                  <div key={iconI} className="text-2xl text-white">
+                    <Icon />
+                  </div>
+                ))}
                 {item.title}
               </div>
             ))}
@@ -212,12 +221,10 @@ const About = () => {
             {aboutData[index].info.map((item, itemI) => (
               <div
                 key={itemI}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
+                className=" flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
               >
                 {/* title */}
-                <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                <div className="hidden md:flex">-</div>
-                <div>{item.stage}</div>
+                <div className="font-light mb-2 md:mb-0 ">{item.title}</div>
 
                 <div className="flex gap-x-4">
                   {/* icons */}
