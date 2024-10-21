@@ -20,8 +20,10 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
+            We tailor your <br />
+            experience with
+            <br />
+            <span className="text-accent">Digital.Reality</span>
           </motion.h1>
 
           {/* subtitle */}
@@ -32,10 +34,10 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
-            exercitationem harum, quia nulla temporibus deleniti libero veniam
-            vero beatae numquam ducimus illum ab similique ipsam tempore fugit
-            quod laudantium debitis.
+            We focus on developing top-tier mobile and web applications
+            customized to suit the specific requirements of your business. With
+            extensive expertise across diverse industries, we deliver innovative
+            solutions that boost growth and streamline efficiency.
           </motion.p>
 
           {/* btn */}
@@ -56,11 +58,11 @@ const Home = () => {
       {/* image */}
       <div className="w-[1280px] h-full absolute right-0 bottom-0">
         {/* bg img */}
-        <div
+        {/* <div
           role="img"
           className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
           aria-hidden
-        />
+        /> */}
 
         {/* particles */}
         <ParticlesContainer />
@@ -74,6 +76,7 @@ const Home = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
         >
+          {/* Any image come here */}
           <Avatar />
         </motion.div>
       </div>
