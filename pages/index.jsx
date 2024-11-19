@@ -5,6 +5,7 @@ import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
 
 import { fadeIn } from "../variants";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -74,10 +75,21 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
+          className="w-2/6 h-full max-w-[737px] max-h-[720px] absolute -bottom-32 lg:bottom-0 lg:right-[15%]"
         >
           {/* Any image come here */}
-          <Avatar />
+          {/* <Avatar /> */}
+
+          {/* <div className="absolute -left-50 -bottom--10  mix-blend-color-dodge animate-pulse duration-75 z-20 w-[400px] xl:w-[360px] select-none pointer-events-none"> */}
+          <div className="absolute -left-50 -bottom--10   animate-pulse duration-75 z-20 w-[400px] xl:w-[360px] select-none pointer-events-none">
+            <Image
+              src="/bulb.png"
+              alt="bulb"
+              width={500}
+              height={400}
+              className="w-full h-full"
+            />
+          </div>
         </motion.div>
       </div>
     </div>

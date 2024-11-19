@@ -17,27 +17,32 @@ const serviceData = [
   {
     Icon: RxCrop,
     title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "Transform your online presence with our expert branding services that resonate with your audience.",
   },
   {
     Icon: RxPencil2,
     title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "Bring your vision to life with our creative design services that captivate and engage.",
   },
   {
     Icon: RxDesktop,
     title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "Build scalable and robust solutions with our expert development services tailored to your needs.",
   },
   {
     Icon: RxReader,
     title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "Craft compelling copy that connects, engages, and drives action for your brand.",
   },
   {
     Icon: RxRocket,
     title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "Boost your online visibility and drive organic traffic with our expert SEO strategies.",
   },
 ];
 

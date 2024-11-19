@@ -31,7 +31,6 @@ const Work = () => {
             >
               <div className="mb-5">
                 <span className="text-xl text-white mb-5">
-                  {" "}
                   On-Time Delivery
                 </span>
                 <br /> We take pride in completing projects on time, ensuring
