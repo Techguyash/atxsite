@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
     >
       {/* metadata */}
       <Head>
-        <title>atxtechnology</title>
+        <title>atxtech</title>
         <meta
           name="description"
           content="atx is a Full-stack web development company with 10+ years of experience."
