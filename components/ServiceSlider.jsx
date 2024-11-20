@@ -6,6 +6,7 @@ import {
   RxRocket,
   RxArrowTopRight,
 } from "react-icons/rx";
+import { RiRobot2Line } from "react-icons/ri";
 import { FreeMode, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -15,28 +16,30 @@ import "swiper/css/pagination";
 
 const serviceData = [
   {
-    Icon: RxCrop,
-    title: "Branding",
+    Icon: RxDesktop,
+    title: "Development",
     description:
-      "Transform your online presence with our expert branding services that resonate with your audience.",
+      "Build scalable and robust solutions with our expert development services tailored to your needs.",
   },
+
   {
     Icon: RxPencil2,
     title: "Design",
     description:
       "Bring your vision to life with our creative design services that captivate and engage.",
   },
+
   {
-    Icon: RxDesktop,
-    title: "Development",
+    Icon: RiRobot2Line,
+    title: "AI",
     description:
-      "Build scalable and robust solutions with our expert development services tailored to your needs.",
+      "Discover smarter solutions with AI technologies designed to transform the way you work..",
   },
   {
-    Icon: RxReader,
-    title: "Copywriting",
+    Icon: RxRocket,
+    title: "Digital Transformation",
     description:
-      "Craft compelling copy that connects, engages, and drives action for your brand.",
+      "Empower your organization with seamless digital transformation strategies to stay ahead in a competitive world.",
   },
   {
     Icon: RxRocket,

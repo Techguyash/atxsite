@@ -9,25 +9,25 @@ import "swiper/css/pagination";
 
 const testimonialData = [
   {
-    image: "/t-avt-1.png",
-    name: "Anne Smith",
-    position: "Customer",
+    image: "/t-avt-3.png",
+    name: "Karthikeyan",
+    position: "CEO, Crest Climbers",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "The team provided outstanding solutions that perfectly met our needs. Their expertise and commitment made a significant impact on our business.",
   },
   {
     image: "/t-avt-2.png",
-    name: "Jane Doe",
-    position: "Customer",
+    name: "Ameen",
+    position: "Imperial design Studio",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Working with the team was a fantastic experience. Their innovative solutions and professionalism helped us achieve our goals effortlessly",
   },
   {
-    image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
+    image: "/t-avt-1.png",
+    name: "Dohan Lee",
+    position: "Toyota, North America",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "The software solutions provided by the team have been instrumental in streamlining our processes. Their technical expertise and timely delivery helped us scale effectively",
   },
 ];
 
