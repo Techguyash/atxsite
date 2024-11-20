@@ -24,6 +24,8 @@ import { IoLogoAndroid } from "react-icons/io";
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 import { fadeIn } from "../../variants";
+import Bulb from "../../components/Bulb";
+import Image from "next/image";
 
 //  data
 export const aboutData = [
@@ -107,9 +109,18 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        className="hidden xl:flex absolute bottom-10 -left-[6px]"
       >
-        <Avatar />
+        {/* <Avatar /> */}
+        <div className="absolute -left-20 -bottom-12 rotate-12 mix-blend-color-dodge animate-pulse duration-75 z-10 w-[200px] xl:w-[260px] select-none pointer-events-none">
+          <Image
+            src="/bulb.png"
+            alt="bulb"
+            width={260}
+            height={200}
+            className="w-full h-full"
+          />
+        </div>
       </motion.div>
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
