@@ -3,7 +3,7 @@ name: Deploy Next.js application
 on:
   push:
     branches:
-      - deploy-with-docker-ec2
+      - main
 
 jobs:
   build:
@@ -11,6 +11,10 @@ jobs:
     steps: 
       - name: Checkout Source
         uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
       - name: Build docker image
         run: docker build -t techguyash/nextjs-app .
       - name: Login to docker hub
